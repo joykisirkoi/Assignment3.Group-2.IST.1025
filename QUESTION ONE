@@ -1,0 +1,26 @@
+import random
+
+n = random.randint(0, 2)
+
+if n == 0:
+    comp = "S"
+elif n == 1:
+    comp = "K"
+else:
+    comp = "P"
+
+
+user = input("Enter S (Stone), K (Knife), or P (Paper): ")
+
+print("Computer:", comp)
+
+if user == comp:
+    print("Tie")
+elif user == "S" and comp == "K":
+    print("You win")
+elif user == "K" and comp == "P":
+    print("You win")
+elif user == "P" and comp == "S":
+    print("You win")
+else:
+    print("Computer wins")
