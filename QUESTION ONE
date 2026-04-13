@@ -9,7 +9,6 @@ elif n == 1:
 else:
     comp = "P"
 
-
 user = input("Enter S (Stone), K (Knife), or P (Paper): ")
 
 print("Computer:", comp)
