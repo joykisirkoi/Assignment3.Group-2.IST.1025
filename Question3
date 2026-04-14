@@ -1,0 +1,23 @@
+# Program to store and analyze weekly temperatures
+
+# Create an empty list
+temperatures = []
+
+# Input temperatures for 7 days
+for i in range(7):
+    temp = float(input(f"Enter temperature for day {i+1}: "))
+    temperatures.append(temp)
+
+# Calculations
+lowest = min(temperatures)
+highest = max(temperatures)
+total = sum(temperatures)
+average = total / len(temperatures)
+
+# Display results
+print("\n--- Weekly Temperature Report ---")
+print("Temperatures:", temperatures)
+print("Lowest Temperature:", lowest)
+print("Highest Temperature:", highest)
+print("Total Temperature:", total)
+print("Average Temperature:", round(average, 2))
