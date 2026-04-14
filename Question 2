@@ -1,0 +1,13 @@
+def convert():
+    fahrenheit = float(input("Enter temperature in Fahrenheit: "))
+    celsius = (5/9) * (fahrenheit - 32)
+    return celsius
+
+# Main program
+celsius_value = convert()
+print(f"Celsius Temperature: {celsius_value:.2f}")
+
+if celsius_value > 20:
+    print("IT'S HOT HERE")
+else:
+    print("IT'S COLD HERE")
